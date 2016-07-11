@@ -28,7 +28,7 @@ xf = 8.0  # Final value of X
 sn = np.size(providedpatientdata)  # How many values of X we want
 x = np.linspace(xi, xf, sn)  # Creating an evenly distributed number of X's between xi, xf
 deg = 3  # Degree of our desired polynomial
-poly = np.polyfit(x, providedpatientdata, deg)  # Computing the polynomail from given data
+poly = np.polyfit(x, providedpatientdata, deg)  # Computing the polynomial from given data
 xc = np.linspace(xi, xf, 30)  # Creating an evenly distributed number of X's for our computed polynomial
 yc = np.polyval(poly, xc)  # Evaluate our computed polynomial
 
