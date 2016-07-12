@@ -38,7 +38,7 @@ linearr[0].set_title('Provided data')
 linearr[0].plot(x, providedpatientdata, marker='o', linestyle='-')
 linearr[1].set_title('Computed data')
 linearr[1].plot(xc, yc, marker='o', linestyle='-')
-plot.show()
+#plot.show()
 
 # Create an easy to read table from data of evaluated polynomial
 tableheaders = ['Computed X', 'Computed Y']
@@ -50,4 +50,4 @@ for i in range(len(xc)):
 print("Original list:", providedpatientdata)
 print("Our PolyFit Coefficients:", poly)
 print("Computing intermediate values by evaluating our computed polynomial")
-print(tabulate(data, headers=tableheaders, tablefmt='fancy_grid', floatfmt='.4f'))
+print(tabulate(data, headers=tableheaders, tablefmt='grid', floatfmt='.4f'))
